@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+         pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -25,6 +28,9 @@
 </head>
 <body>
 	<h1>${message}</h1>
+	<c:forEach var="i" begin="1" end="5">
+		Item <c:out value="${i}"/><p>
+	</c:forEach>
 
     <script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="resources/js/main.js" type="text/javascript"></script>
