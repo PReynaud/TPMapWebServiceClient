@@ -10,11 +10,11 @@ import java.rmi.RemoteException;
 
 @Controller
 @RequestMapping("/")
-public class HelloController {
+public class MainController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
 		try {
-			PaysWebServiceServiceStub stub = new PaysWebServiceServiceStub("http://localhost:8080/axis2/services/PaysWebServiceService?wsdl");
+			PaysWebServiceServiceStub stub = new PaysWebServiceServiceStub();
 			PaysWebServiceServiceStub.Pays[] listePays = stub.obtainListePays(new PaysWebServiceServiceStub.ObtainListePays()).get_return();
 
 			for(PaysWebServiceServiceStub.Pays pays: listePays){
@@ -27,6 +27,6 @@ public class HelloController {
 		}
 
 		model.addAttribute("message", "Hello world!");
-		return "hello";
+		return "index";
 	}
 }
