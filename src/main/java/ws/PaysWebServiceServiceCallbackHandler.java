@@ -4,7 +4,7 @@
  * This file was auto-generated from WSDL
  * by the Apache Axis2 version: 1.6.3  Built on : Jun 27, 2015 (11:17:49 BST)
  */
-package controller;
+package ws;
 
 
 /**
@@ -39,11 +39,26 @@ public abstract class PaysWebServiceServiceCallbackHandler {
     }
 
     /**
+     * auto generated Axis2 call back method for getPays method
+     * override this method for handling normal response from getPays operation
+     */
+    public void receiveResultgetPays(
+        ws.PaysWebServiceServiceStub.GetPaysResponse result) {
+    }
+
+    /**
+     * auto generated Axis2 Error handler
+     * override this method for handling error response from getPays operation
+     */
+    public void receiveErrorgetPays(java.lang.Exception e) {
+    }
+
+    /**
      * auto generated Axis2 call back method for obtainListePays method
      * override this method for handling normal response from obtainListePays operation
      */
     public void receiveResultobtainListePays(
-        controller.PaysWebServiceServiceStub.ObtainListePaysResponse result) {
+        ws.PaysWebServiceServiceStub.ObtainListePaysResponse result) {
     }
 
     /**
@@ -51,19 +66,5 @@ public abstract class PaysWebServiceServiceCallbackHandler {
      * override this method for handling error response from obtainListePays operation
      */
     public void receiveErrorobtainListePays(java.lang.Exception e) {
-    }
-
-    /**
-     * auto generated Axis2 call back method for _1 method
-     * override this method for handling normal response from _1 operation
-     */
-    public void receiveResult_1() {
-    }
-
-    /**
-     * auto generated Axis2 Error handler
-     * override this method for handling error response from _1 operation
-     */
-    public void receiveError_1(java.lang.Exception e) {
     }
 }

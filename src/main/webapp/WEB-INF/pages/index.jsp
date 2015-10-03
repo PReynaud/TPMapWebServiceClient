@@ -7,7 +7,7 @@
 	<meta name="description" content="TP incluant la création d'un webservice et d'un site web associé" />
 	<meta name="keywords" content="tp, polytech, webservice" />
 	<meta name="language" content="fr-FR" />
-	<meta name="author" content="Etudiants de Polyenco" />
+	<meta name="author" content="Pierre REYNAUD - Dimitri RODARIE" />
 
 	<title>TP Pays</title>
 
@@ -27,9 +27,8 @@
 
 </head>
 <body>
-	<h1>${message}</h1>
-	<c:forEach var="i" begin="1" end="5">
-		Item <c:out value="${i}"/><p>
+	<c:forEach items = "${countries}" var="country">
+		<li>${country}</li>
 	</c:forEach>
 
     <script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
