@@ -9,7 +9,7 @@
     <meta name="language" content="fr-FR"/>
     <meta name="author" content="Pierre REYNAUD - Dimitri RODARIE"/>
 
-    <title>TP Pays</title>
+    <title>Detail ${country.nomPays}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="HandheldFriendly" content="true"/>
@@ -21,10 +21,6 @@
 
     <!-- JS -->
     <script src="<c:url value="/resources/js/jquery-1.11.3.min.js"/>" type="text/javascript"></script>
-
-    <!-- Fav Icon -->
-    <!-- <link rel="icon" type="image/png" href="img/Favicon.png"/>
-    <link rel="shortcut icon" href="img/Favicon.png"/>-->
 
 </head>
 <body>
@@ -55,16 +51,14 @@
 </nav>
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
-            <div class="jumbotron">
-                <h1>
-                    TP - WebService - STUB
-                </h1>
-                <blockquote>
-                    <p>Hello papagena, tu es bella comme la papaya !</p>
-                </blockquote>
-            </div>
-        </div>
+        <h1>Détail ${country.nomPays}</h1>
+    </div>
+    <div class="row">
+        <ul>
+            <li>Nom : ${country.nomPays}</li>
+            <li>Capitale : ${country.nomCapitale}</li>
+            <li>Nombre d'habitants : ${country.nbHabitants}</li>
+        </ul>
     </div>
 </div>
 <footer class="footer">

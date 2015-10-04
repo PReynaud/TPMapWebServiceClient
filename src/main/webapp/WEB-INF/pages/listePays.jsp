@@ -13,15 +13,11 @@
   <meta name="MobileOptimized" content="320"/>
 
   <!-- CSS -->
-  <link href="resources/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="resources/css/main.css" rel="stylesheet"/>
+  <link href="<c:url value="/resources/css/bootstrap.min.css"/>" rel="stylesheet"/>
+  <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet"/>
 
   <!-- JS -->
-  <script src="resources/js/jquery-1.11.3.min.js" type="text/javascript"></script>
-
-  <!-- Fav Icon -->
-  <link rel="icon" type="image/png" href="img/Favicon.png"/>
-  <link rel="shortcut icon" href="img/Favicon.png"/>
+  <script src="<c:url value="/resources/js/jquery-1.11.3.min.js"/>" type="text/javascript"></script>
 
 </head>
 <body>
@@ -60,12 +56,14 @@
     <div class="col-lg-12">
       <table class="table table-hover">
         <thead>
-        <td>
-          Nom du Pays
-        </td>
-        <td>
-          Actions
-        </td>
+        <tr>
+          <td>
+            Nom du Pays
+          </td>
+          <td>
+            Actions
+          </td>
+        </tr>
         </thead>
         <tbody>
         <c:forEach items="${countries}" var="country">
@@ -86,7 +84,7 @@
     </div>
   </nav>
 </footer>
-<script src="resources/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="resources/js/main.js" type="text/javascript"></script>
+<script src="<c:url value="/resources/js/bootstrap.min.js"/>" type="text/javascript"></script>
+<script src="<c:url value="/resources/js/main.js"/>" type="text/javascript"></script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 package controller;
 
-import org.apache.axis2.AxisFault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,8 +27,6 @@ public class ListePaysController {
                 countries.add(pays.getNomPays());
             }
             model.addAttribute("countries", countries);
-        } catch (AxisFault axisFault) {
-            axisFault.printStackTrace();
         } catch (RemoteException e) {
             e.printStackTrace();
         }
