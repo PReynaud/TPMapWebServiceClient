@@ -44,9 +44,9 @@
                 <li class="active"><a href="/">Accueil</a></li>
                 <li><a href="/listePays">Liste Pays</a></li>
             </ul>
-            <form class="navbar-form navbar-right" role="search">
+            <form class="navbar-form navbar-right" role="search" id="paysSearch">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Rechercher">
+                    <input type="text" class="form-control" placeholder="Rechercher" id="champRecherche">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
