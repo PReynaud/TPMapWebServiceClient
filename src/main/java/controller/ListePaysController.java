@@ -29,6 +29,8 @@ public class ListePaysController {
             model.addAttribute("countries", countries);
         } catch (RemoteException e) {
             e.printStackTrace();
+            model.addAttribute("Impossible de récupérer les données venant de la Base de données");
+            return "404";
         }
         return "listePays";
     }

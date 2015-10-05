@@ -28,6 +28,8 @@ public class DetailPaysController {
             model.addAttribute("capital",pays.getNomCapitale().replace(' ','+'));
         } catch (RemoteException e) {
             e.printStackTrace();
+            model.addAttribute("error", "Impossible de trouver le pays : " + name);
+            return "404";
         }
         return "detailPays";
     }
