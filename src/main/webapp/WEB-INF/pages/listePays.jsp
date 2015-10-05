@@ -69,7 +69,10 @@
         <c:forEach items="${countries}" var="country">
           <tr>
             <td>${country}</td>
-            <td>Consulter</td>
+            <td>
+              <a href="/pays/${country}">
+                Consulter
+              </a></td>
           </tr>
         </c:forEach>
         </tbody>

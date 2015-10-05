@@ -5,6 +5,9 @@ body > .container{
     padding-bottom: 70px;
     min-height: 100%;
 }
+h1{
+    margin: 30px;
+}
 
 .footer > .navbar{
     margin-bottom: 0;

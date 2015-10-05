@@ -54,11 +54,16 @@
         <h1>Détail ${country.nomPays}</h1>
     </div>
     <div class="row">
-        <ul>
-            <li>Nom : ${country.nomPays}</li>
-            <li>Capitale : ${country.nomCapitale}</li>
-            <li>Nombre d'habitants : ${country.nbHabitants}</li>
-        </ul>
+        <div class="col-lg-6">
+            <ul class="list-group">
+                <li class="list-group-item">Nom : ${country.nomPays}</li>
+                <li class="list-group-item">Capitale : ${country.nomCapitale}</li>
+                <li class="list-group-item">Nombre d'habitants : ${country.nbHabitants}</li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <img src="http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&center=${country.nomPays}&size=640x400"/>
+        </div>
     </div>
 </div>
 <footer class="footer">
