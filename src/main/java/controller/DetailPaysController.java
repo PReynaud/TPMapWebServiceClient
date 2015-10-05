@@ -24,8 +24,8 @@ public class DetailPaysController {
             PaysWebServiceServiceStub.GetPays request = new PaysWebServiceServiceStub.GetPays();
             request.setName(name);
             PaysWebServiceServiceStub.Pays pays = stub.getPays(request).get_return();
-
             model.addAttribute("country", pays);
+            model.addAttribute("capital",pays.getNomCapitale().replace(' ','+'));
         } catch (RemoteException e) {
             e.printStackTrace();
         }

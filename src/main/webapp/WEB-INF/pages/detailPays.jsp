@@ -62,7 +62,7 @@
             </ul>
         </div>
         <div class="col-lg-6">
-            <img src="http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&center=${country.nomPays}&size=640x400"/>
+            <img src="http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&center=${country.nomPays}&size=640x400&markers=color:red%7C${capital}"/>
         </div>
     </div>
 </div>
