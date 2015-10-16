@@ -59,10 +59,14 @@
                 <li class="list-group-item">Nom : ${country.nomPays}</li>
                 <li class="list-group-item">Capitale : ${country.nomCapitale}</li>
                 <li class="list-group-item">Nombre d'habitants : ${country.nbHabitants}</li>
+                <input type="hidden" name="countryName" value="${country.nomPays}" class="countryName">
             </ul>
         </div>
-        <div class="col-lg-6">
+        <%--<div class="col-lg-6">
             <img src="http://maps.googleapis.com/maps/api/staticmap?maptype=hybrid&center=${country.nomPays}&size=640x400&markers=color:red%7C${capital}"/>
+        </div>--%>
+        <div class="col-lg-6">
+            <div id="map"></div>
         </div>
     </div>
 </div>
@@ -75,5 +79,7 @@
 </footer>
 <script src="<c:url value="/resources/js/bootstrap.min.js"/>" type="text/javascript"></script>
 <script src="<c:url value="/resources/js/main.js"/>" type="text/javascript"></script>
+<script src="<c:url value="/resources/js/map.js"/>" type="text/javascript"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDapZqU3n516PIkAwaqLIWYuppo_A2uqs8&callback=initMap&language=fr"></script>
 </body>
 </html>

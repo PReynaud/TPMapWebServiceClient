@@ -1,12 +1,16 @@
-body { padding-top: 70px;
-    height: 100%;}
+body { padding-top: 70px;}
 
-body > .container{
-    padding-bottom: 70px;
-    min-height: 100%;
-}
 h1{
     margin: 30px;
+}
+
+footer > nav.navbar.navbar-inverse{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    border-radius: inherit;
 }
 
 .footer > .navbar{
@@ -17,4 +21,8 @@ h1{
     text-align: center;
     color:#ffffff;
     margin:15px;
+}
+
+#map{
+    height: 300px;
 }
